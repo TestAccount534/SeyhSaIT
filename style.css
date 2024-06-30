@@ -10,10 +10,11 @@ body {
 .rope-container {
     position: relative;
     width: 200px;
-    height: 200px;
+    height: 700px;
 }
 
 .rope {
+    display: none;
     position: absolute;
     top: 0;
     left: 50%;
@@ -21,19 +22,47 @@ body {
     height: 600px;
     background-color: #000;
     transform-origin: top;
-    animation: swing 3s ease-in-out infinite;
 }
 
 .rock {
+    display: none;
     position: absolute;
     bottom: 0px;
-    width: 120px;
-    background-color: #8B4513;
+    width: 100px;
     transform: translateX(-50%);
+}
+
+.button-container {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 200px;
+    text-align: center;
+}
+
+.button-container button{
+    font-size: 24px;
+    box-shadow: 2px 2px 2px black;
+    width: 200px;
+    background-color: #8B4513;
+    color: white;
+}
+
+.button-container button:hover{
+
+    background-color: #723910;
 }
 
 @keyframes swing {
     0% { transform: rotate(20deg); }
     50% { transform: rotate(-20deg); }
     100% { transform: rotate(20deg); }
+}
+
+.animate {
+    animation: swing 3s ease-in-out infinite;
+}
+
+.show {
+    display: inline-block;
 }

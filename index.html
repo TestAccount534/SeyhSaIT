@@ -8,10 +8,27 @@
 </head>
 <body>
     <div class="rope-container">
-        <div class="rope">
-            <img class="rock" src="images/seyhsait.jpg" alt="seyhsait">
+        <div id="rope" class="rope">
+            <img id="rock" class="rock" src="images/seyhsait.jpg" alt="seyhsait">
+        </div>
+        <div class="button-container">
+            <button id="button">SaİT'i As!</button>
         </div>
     </div>
-    <audio src="songs/music.mp3" autoplay loop></audio>
+    <audio id="song" src="songs/music.mp3" loop></audio>
+
+    <script>
+        document.getElementById('button').addEventListener('click', function() {
+            var audio = document.getElementById('song');
+            var rope = document.getElementById('rope');
+            var image = document.getElementById('rock');
+
+
+            audio.play();
+            rope.classList.add('animate');
+            rope.classList.add('show');
+            image.classList.add('show');
+        });
+    </script>
 </body>
 </html>
