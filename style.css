@@ -27,7 +27,7 @@ body {
 .rock {
     position: absolute;
     bottom: 0px;
-    width: 100px;
+    width: 120px;
     background-color: #8B4513;
     transform: translateX(-50%);
 }
