@@ -8,26 +8,26 @@
 </head>
 <body>
     <div class="rope-container">
-        <div id="rope" class="rope">
-            <img id="rock" class="rock" src="images/seyhsait.jpg" alt="seyhsait">
+        <div id="rope1" class="rope">
+            <img id="rock1" class="rock" src="images/seyhsait.jpg" alt="seyhsait">
         </div>
-        <div class="button-container">
-            <button id="button">SaİT'i As!</button>
-        </div>
+    </div>
+    <div class="button-container">
+        <button id="button">SaİT'i As!</button>
     </div>
     <audio id="song" src="songs/music.mp3" loop></audio>
 
     <script>
         document.getElementById('button').addEventListener('click', function() {
             var audio = document.getElementById('song');
-            var rope = document.getElementById('rope');
-            var image = document.getElementById('rock');
+            var rope1 = document.getElementById('rope1');
+            var image1 = document.getElementById('rock1');
 
 
             audio.play();
-            rope.classList.add('animate');
-            rope.classList.add('show');
-            image.classList.add('show');
+            rope1.classList.add('animate');
+            rope1.classList.add('show');
+            image1.classList.add('show');
         });
     </script>
 </body>

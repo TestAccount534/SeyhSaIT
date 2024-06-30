@@ -1,27 +1,30 @@
 body {
     display: flex;
     justify-content: center;
-
     height: 100vh;
     margin: 0;
     background-color: #f0f0f0;
+    
 }
 
 .rope-container {
     position: relative;
-    width: 200px;
+    width: 700px;
     height: 700px;
 }
 
 .rope {
     display: none;
-    position: absolute;
-    top: 0;
-    left: 50%;
     width: 2px;
     height: 600px;
     background-color: #000;
     transform-origin: top;
+}
+
+#rope1{
+    position: absolute;
+    top: 0;
+    left: 50%;
 }
 
 .rock {
@@ -34,9 +37,10 @@ body {
 
 .button-container {
     position: absolute;
-    bottom: 0px;
-    left: 0px;
+    bottom: 25%;
+    left: 50%;
     width: 200px;
+    margin-left: -100px;
     text-align: center;
 }
 
