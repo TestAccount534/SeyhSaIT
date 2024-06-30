@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center;
+
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.rope-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.rope {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 600px;
+    background-color: #000;
+    transform-origin: top;
+    animation: swing 3s ease-in-out infinite;
+}
+
+.rock {
+    position: absolute;
+    bottom: 0px;
+    width: 100px;
+    background-color: #8B4513;
+    transform: translateX(-50%);
+}
+
+@keyframes swing {
+    0% { transform: rotate(20deg); }
+    50% { transform: rotate(-20deg); }
+    100% { transform: rotate(20deg); }
+}
